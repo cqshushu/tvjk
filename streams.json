@@ -1,0 +1,54 @@
+{
+  "token": "1oe8rf7g",
+  "video_codec": "copy",
+  "audio_codec": "copy",
+  "hls_time": "2",
+  "hls_list_size": "20",
+  "logo_path": "https://live.fanmingming.com/tv/",
+  "list": [
+    {
+      "group": "央视",
+      "name": "CCTV-1高清",
+      "url": "rtsp://123.147.112.17:8089/04000001/01000000004000000000000000000231?AuthInfo=xxx&userid=gf001&userid=gf001",
+      "stream_id": "1001_1",
+      "always_on": 0,
+      "stop_delay": 30,
+      "t": [
+        "tiumfimh"
+      ]
+    },
+    {
+      "group": "央视",
+      "name": "CCTV-2高清",
+      "url": "rtsp://123.147.112.17:8089/04000001/01000000004000000000000000000295?AuthInfo=xxx&userid=gf001&userid=gf001",
+      "stream_id": "1002_1",
+      "always_on": 0,
+      "stop_delay": 30,
+      "t": [
+        "qipnevec"
+      ]
+    },
+    {
+      "group": "重庆",
+      "name": "重庆卫视超高清",
+      "url": "rtsp://123.147.112.17:8089/04000001/01000000004000000000000000000365?AuthInfo=xxx&userid=gf001&userid=gf001",
+      "stream_id": "1003_1",
+      "always_on": 0,
+      "stop_delay": 30,
+      "t": [
+        "jwp81krh"
+      ]
+    },
+    {
+      "group": "重庆",
+      "name": "重庆新闻超高清",
+      "url": "rtsp://123.147.112.17:8089/04000001/01000000004000000000000000000367?AuthInfo=xxx&userid=gf001&userid=gf001",
+      "stream_id": "1004_1",
+      "always_on": 0,
+      "stop_delay": 30,
+      "t": [
+        "n68sdfs6"
+      ]
+    }
+  ]
+}

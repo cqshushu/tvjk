@@ -7,7 +7,7 @@ docker run -d \
   -v /etc/docker/iptv-hls/hls:/app/hls \
   -v /etc/docker/iptv-hls/logs:/app/logs \
   --restart unless-stopped \
-  cqshushu/iptv-hls:4.2
+  cqshushu/iptv-hls:4.5
 
 
 参数说明：

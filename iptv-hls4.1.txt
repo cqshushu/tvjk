@@ -1,0 +1,54 @@
+部署命令：
+
+docker run -d \
+  --name iptv-hls \
+  -p 50086:50086 \
+  -v /etc/docker/iptv-hls/config:/app/config \
+  -v /etc/docker/iptv-hls/hls:/app/hls \
+  -v /etc/docker/iptv-hls/logs:/app/logs \
+  --restart unless-stopped \
+  cqshushu/iptv-hls:4.1
+
+
+参数说明：
+--name 容器名称（可修改）
+-p [主机端口]:50086（第一个端口可自定义）
+/etc/docker/iptv-hls 配置文件存放路径（可修改）
+
+文件结构：
+├─ config/
+│  ├─ streams.json  # 推流配置
+│  └─ password.json  # 密码配置
+└─ hls/            # HLS分片存储
+└─ logs/           # ffmpeg运行日志
+
+
+streams.json参数说明：
+{
+  "token": "iptv",    #身份验证参数，默认iptv
+  "video_codec": "copy",  #视频转码，默认copy，即不转码
+  "audio_codec": "copy",  #音频转码，默认copy，即不转码
+  "hls_time": "3",    #单个切片大小，单位秒，默认3秒
+  "hls_list_size": "12",    #切片数量，默认12个
+  "logo_path": "https://live.fanmingming.com/tv/", #m3u接口的台标文件路径，默认为fanmingming
+  "list": [
+    {
+      "group": "央视频道",    #分组名称
+      "name": "CCTV1",   #节目名称
+      "url": "http://192.168.2.1:4022/rtp/225.0.4.74:7980",   #推流的源地址
+      "stream_id": "cctv1",   #播放id
+      "always_on": 1,   #服务运行就开始推流
+      "stop_delay": 30,   #推流时间，单位秒，默认30秒，如需一直推流，设置为0
+      "t":["token1"]  #单个节目1个token
+    },
+    {
+      "group": "央视频道",
+      "name": "广东体育",
+      "url": "http://192.168.2.245:8219/jk/gdzb.php?id=239.77.0.112:5146",
+      "stream_id": "gdty",
+      "always_on": 0,   #按需推流，有请求时开启推流
+      "stop_delay": 30,  #延迟关闭推流，单位秒，默认30秒无请求即关闭推流并删除切片
+      "t":["token1","token2"] #单个节目多个token
+    }
+  ]
+}

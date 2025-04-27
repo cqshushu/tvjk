@@ -117,7 +117,7 @@ class Spider(Spider):
                     ch_name = f"[{match['时间']}] {match['分类']}-{match['主队']}vs{match['客队']}"
                     links = match['直播链接'][:3]
                     #print("links:",links)
-                    for j, link in enumerate(links, 1):
+                    for k, link in enumerate(links, 1):
                         link = link.replace("\n","").replace(" ","")
                         if link:
                             ch_url = f"video://{link}"

@@ -115,13 +115,13 @@ class Spider(Spider):
                 for i, match in enumerate(matches[status_group], 1):
                     #ch_name = f"{i}. [{match['时间']}] {match['分类']}-{match['主队']} vs {match['客队']}"
                     ch_name = f"[{match['时间']}] {match['分类']}-{match['主队']}vs{match['客队']}"
-                    links = match['直播链接'][:1]
+                    links = match['直播链接'][:3]
                     #print("links:",links)
-                    for link in links:
+                    for j, link in enumerate(links, 1):
                         link = link.replace("\n","").replace(" ","")
                         if link:
                             ch_url = f"video://{link}"
-                            extinf = f'#EXTINF:-1 tvg-name="{ch_name}" group-title="{status_group}",{ch_name}'
+                            extinf = f'#EXTINF:-1 tvg-name="{ch_name}{k}" group-title="{status_group}",{ch_name}{k}'
                             #print(f"{ch_name}[{k}],{ch_url}")
                             m3u_content.extend([extinf, ch_url])
             elif status_group == "预告":

@@ -1,15 +1,15 @@
 {
   "lives": [
     {
-      "name": "快直播体育(python)",
-      "type": 3,
-      "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/kzbty.py",
-      "ext": {}
-    },
-    {
       "name": "快直播电视(python)",
       "type": 3,
       "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/kzb.py",
+      "ext": {}
+    },
+    {
+      "name": "快直播体育(python)",
+      "type": 3,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/kzbty.py",
       "ext": {}
     },
     {

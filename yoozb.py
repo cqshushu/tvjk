@@ -52,12 +52,9 @@ class Spider(Spider):
             'Upgrade-Insecure-Requests': '1',
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
         }
-
-        # 获取网页内容（已解决编码问题）
         response = requests.get('http://www.yoozb.live/', headers=headers, verify=False)
         html_content = response.content.decode('utf-8-sig')
 
-        # 解析HTML内容
         soup = BeautifulSoup(html_content, 'html.parser')
         data_div = soup.find('div', class_='data')
         rows = data_div.find_all('tr')
@@ -130,7 +127,7 @@ class Spider(Spider):
             elif status_group == "预告":
                 for i, match in enumerate(matches[status_group], 1):
                     ch_name = f"{i}. [{match['时间']}] {match['分类']}-{match['主队']} vs {match['客队']}"
-                    ch_url = "http://"
+                    ch_url = "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/yootv.mp4"
                     #print(f"{ch_name},{ch_url}")
                     extinf = f'#EXTINF:-1 tvg-name="{ch_name}]" group-title="{status_group}",{ch_name}'
                     #print(f"{ch_name}[{k}],{ch_url}")

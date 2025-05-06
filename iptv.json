@@ -23,6 +23,12 @@
       "type": 3,
       "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/360pai.py",
       "ext": {}
+    },
+    {
+      "name": "88KQ",
+      "url": "http://php.cqshushu.ggff.net/kqt.php?公众号【医工学习日志】",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ]
 }

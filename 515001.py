@@ -79,6 +79,7 @@ class Spider(Spider):
         for a in soup.find_all('a', class_='clearfix'):
             # 提取链接
             link = a.get('href', '')
+            link = f"video://{link}"
             
             # 提取赛事名称和时间
             event_time_p = a.find('p', class_='eventtime_wuy')

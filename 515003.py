@@ -107,7 +107,7 @@ class Spider(Spider):
         for match in matches:
             title = match.split(",")[0]
             ch_url = match.split(",")[1]
-            extinf = f'#EXTINF:-1 tvg-name="{title}" group-title="360pai",{title}'
+            extinf = f'#EXTINF:-1 tvg-name="{title}" group-title="515001",{title}'
             m3u_content.extend([extinf, ch_url])
  
         return '\n'.join(m3u_content)

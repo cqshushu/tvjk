@@ -10,7 +10,7 @@ import re
 from datetime import datetime
 sys.path.append('..')
 from base.spider import Spider
-
+from bs4 import BeautifulSoup
 
 class Spider(Spider):
     def getName(self):

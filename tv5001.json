@@ -1,0 +1,40 @@
+{
+  "lives": [
+    {
+      "name": "快直播电视(python)",
+      "type": 3,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/kzb.py",
+      "ext": {}
+    },
+    {
+      "name": "快直播体育(python)",
+      "type": 3,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/kzbty.py",
+      "ext": {}
+    },
+    {
+      "name": "yoo体育(python)",
+      "type": 3,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/yoozb.py",
+      "ext": {}
+    },
+    {
+      "name": "360pai",
+      "type": 3,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/360pai.py",
+      "ext": {}
+    },
+    {
+      "name": "88KQ",
+      "url": "http://php.cqshushu.ggff.net/kqt.php?公众号【医工学习日志】",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "515001",
+      "type": 3,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/cqshushu/tvjk/master/tv5001.py",
+      "ext": {}
+    }
+  ]
+}

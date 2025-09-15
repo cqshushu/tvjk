@@ -1,0 +1,32 @@
+{
+  "lives": [
+    {
+      "name": "全部",
+      "url": "https://raw.githubusercontent.com/cqshushu/tvjk/main/all.txt"
+    },
+    {
+      "name": "兰州酒店",
+      "url": "https://raw.githubusercontent.com/cqshushu/tvjk/main/lanzhou.txt"
+    },
+    {
+      "name": "南京酒店",
+      "url": "https://raw.githubusercontent.com/cqshushu/tvjk/main/nanjing.txt"
+    },
+    {
+      "name": "宁波希尔顿欢朋",
+      "url": "https://raw.githubusercontent.com/cqshushu/tvjk/main/ningbo.txt"
+    },
+    {
+      "name": "福州酒店",
+      "url": "https://raw.githubusercontent.com/cqshushu/tvjk/main/fuzhou.txt"
+    },
+    {
+      "name": "绥化酒店",
+      "url": "https://raw.githubusercontent.com/cqshushu/tvjk/main/suihua.txt"
+    },
+    {
+      "name": "青岛酒店",
+      "url": "https://raw.githubusercontent.com/cqshushu/tvjk/main/qingdao.txt"
+    }
+  ]
+}
